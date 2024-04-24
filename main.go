@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/KeihakuOh/Go-learning/helpers"
+	"github.com/tsawler/myniceprogram/helpers"
 )
 
 const numPool = 1000
