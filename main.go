@@ -1,7 +1,24 @@
 package main
 
-import "fmt"
+import (
+	"log"
+
+	"github.com/KeihakuOh/Go-learning/helpers"
+)
+
+const numPool = 1000
+
+func calculateValue(intChan chan int) {
+	randomNumber := helpers.RandomNumber(numPool)
+	intChan <- randomNumber
+}
 
 func main() {
-	fmt.Println("Hello, world!")
+	intChan := make(chan int)
+	defer close(intChan)
+
+	go calculateValue(intChan)
+
+	num := <-intChan
+	log.Println(num)
 }
