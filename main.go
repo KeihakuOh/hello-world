@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"log"
+
+	"github.com/KeihakuOh/myniceprogram/helpers"
+)
 
 func main() {
-	fmt.Println("Hello, world!")
+	var myVar helpers.SomeType
+	myVar.TypeName = "Some name"
+
+	log.Println(myVar.TypeName)
 }
