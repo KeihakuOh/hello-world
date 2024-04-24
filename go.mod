@@ -1,3 +1,3 @@
-module "github.com/KeihakuOh/myniceprogram"
+module "github.com/KeihakuOh/Go-learning"
 
 go 1.15

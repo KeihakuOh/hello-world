@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/KeihakuOh/myniceprogram/helpers"
+	"github.com/KeihakuOh/Go-learning/helpers"
 )
 
 func main() {
