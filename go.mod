@@ -1,4 +1,3 @@
-module github.com/tsawler/myniceprogram
+module github.com/KeihakuOh/Go-learning
 
-go 1.15
-
+go 1.22.2
