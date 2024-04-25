@@ -6,19 +6,9 @@ import (
 	"github.com/KeihakuOh/Go-learning/helpers"
 )
 
-const numPool = 1000
-
-func calculateValue(intChan chan int) {
-	randomNumber := helpers.RandomNumber(numPool)
-	intChan <- randomNumber
-}
-
 func main() {
-	intChan := make(chan int)
-	defer close(intChan)
+	var myVar helpers.SomeType
+	myVar.TypeName = "Some name"
 
-	go calculateValue(intChan)
-
-	num := <-intChan
-	log.Println(num)
+	log.Println(myVar.TypeName)
 }
