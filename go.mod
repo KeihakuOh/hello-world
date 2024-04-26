@@ -1,3 +1,3 @@
-module json-example
+module bookings-udemy
 
 go 1.15
