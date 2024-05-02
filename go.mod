@@ -1,3 +1,3 @@
-module github.com/KeihakuOh/Go-learning
+module bookings-udemy
 
-go 1.22.2
+go 1.22
