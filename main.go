@@ -21,13 +21,13 @@ func About(w http.ResponseWriter, r *http.Request) {
 
 // Divide divides one value into another and returns message with result
 func Divide(w http.ResponseWriter, r *http.Request) {
-	f, err := divideValues(100.0, 10.0)
+	f, err := divideValues(100.0, 0.0)
 	if err != nil {
 		_, _ = fmt.Fprintf(w, "Cannot divide by 0")
 		return
 	}
 
-	_, _ = fmt.Fprintf(w, fmt.Sprintf("%f divided by %f is %f", 100.0, 10.0, f))
+	_, _ = fmt.Fprintf(w, fmt.Sprintf("%f divided by %f is %f", 100.0, 0.0, f))
 }
 
 func divideValues(x, y float32) (float32, error) {
