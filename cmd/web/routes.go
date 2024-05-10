@@ -3,8 +3,9 @@ package main
 import (
 	"bookings-udemy/pkg/config"
 	"bookings-udemy/pkg/handlers"
-	"github.com/bmizerany/pat"
 	"net/http"
+
+	"github.com/bmizerany/pat"
 )
 
 func routes(app *config.AppConfig) http.Handler {
