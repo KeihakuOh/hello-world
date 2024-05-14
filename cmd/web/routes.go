@@ -1,10 +1,10 @@
 package main
 
 import (
-	"bookings-udemy/pkg/config"
-	"bookings-udemy/pkg/handlers"
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
+	"github.com/tsawler/bookings-app/pkg/config"
+	"github.com/tsawler/bookings-app/pkg/handlers"
 	"net/http"
 )
 
