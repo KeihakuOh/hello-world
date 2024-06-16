@@ -3,15 +3,17 @@ package render
 import (
 	"bytes"
 	"fmt"
-	"github.com/justinas/nosurf"
-	"github.com/tsawler/bookings-app/pkg/config"
-	"github.com/tsawler/bookings-app/pkg/models"
 	"html/template"
 	"log"
 	"net/http"
 	"path/filepath"
+
+	"github.com/justinas/nosurf"
+	"github.com/tsawler/bookings-app/pkg/config"
+	"github.com/tsawler/bookings-app/pkg/models"
 )
 
+// test
 var functions = template.FuncMap{}
 
 var app *config.AppConfig
